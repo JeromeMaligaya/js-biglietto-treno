@@ -18,6 +18,12 @@ console.log('JS OK')
 // fine
    
 // 3.lavorazione dati
+    // calcolo prezzo del biglietto        
+    const ticketKm = 0.21;
+
+    const ticketPrice = userKm * ticketKm;
+    console.log('Ticket price €', ticketPrice,);
+
     
 
 // 4.generazione output
