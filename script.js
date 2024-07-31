@@ -13,17 +13,17 @@ console.log('JS OK')
     console.log('Km', userKm); 
 
     // 2.chiedo all'utente la sua età
-    const userAge = parseInt(prompt('Quanti anni hai?', 70 ));
+    const userAge = parseInt(prompt('Quanti anni hai?', 15 ));
     console.log('Age', userAge); 
 // fine
    
 // 3.lavorazione dati
-    // calcolo prezzo del biglietto        
+    // calcolo prezzo del biglietto  scontato       
     const ticketKm = 0.21;
 
     const ticketPrice = userKm * ticketKm;
     console.log('Ticket price €', ticketPrice,);
-
+  
     // calcolo dello sconto
     let discount = 0;
 
@@ -36,9 +36,15 @@ console.log('JS OK')
         let messageDiscount = `Hai diritto a uno sconto del ${discount}%`;
         console.log('Message Discount', messageDiscount);
     }
-     
+    
+    // calcolo prezzo del biglietto scontato   
+    if (userAge < 18 || userAge > 65){  
     console.log('discount', discount,'%');
+
+    const ticketDiscounted = (ticketPrice - ((ticketPrice * discount) / 100)).toFixed(2);
+    console.log('Ticket price with discount €', ticketDiscounted,);
+    }
     
-    
+// fine
 
 // 4.generazione output
