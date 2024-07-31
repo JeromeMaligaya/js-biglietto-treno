@@ -58,21 +58,22 @@ console.log('JS OK')
 // fine
 
 // 4.generazione output
-// stampo in pagina i km
-resultKm.innerHTML += ` <strong> ${userKm} </strong>`;
+    // stampo in pagina i km
+    resultKm.innerHTML += ` <strong> ${userKm} </strong>`;
 
-// stampo in pagina l'età
-resultAge.innerHTML += ` <strong> ${userAge} </strong>`;
+    // stampo in pagina l'età
+    resultAge.innerHTML += ` <strong> ${userAge} </strong>`;
 
-// stampo in pagina il prezzo del biglietto senza sconto
-resultPrice.innerHTML += ` <strong> ${ticketPrice}€ </strong>`;
+    // stampo in pagina il prezzo del biglietto senza sconto
+    resultPrice.innerHTML += ` <strong> ${ticketPrice}€ </strong>`;
 
-// stampo in pagina la percentuale dello sconto
-resultDiscount.innerHTML += `<strong> ${discount}% </strong>`;
+    // stampo in pagina la percentuale dello sconto
+    resultDiscount.innerHTML += `<strong> ${discount}% </strong>`;
 
-// stampo in pagina il prezzo finale del biglietto con lo sconto
-if (userAge < 18 || userAge > 65){  
+    // stampo in pagina il prezzo finale del biglietto con lo sconto
+    if (userAge < 18 || userAge > 65){  
     resultPriceDiscounted.innerHTML += ` <strong> ${ticketDiscounted}€ </strong>`
-} else {
+    } else {
     resultPriceDiscounted.innerHTML += ` <strong> ${ticketPrice}€ </strong>`
-}
+    }
+// fine
