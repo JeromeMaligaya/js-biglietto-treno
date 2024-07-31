@@ -25,8 +25,8 @@ console.log('JS OK')
     console.log('Age', userAge); 
 
      // ! validazione
-     if (userAge <= 0){
-        alert('Hai inserito un valore non valido');
+     if (userAge <= 0 || isNaN(userAge) || isNaN(userKm)){
+        alert('Uno dei valori che hai inserito non valido');
         location.reload;
     }
 // fine
