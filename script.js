@@ -23,6 +23,12 @@ console.log('JS OK')
     // 2.chiedo all'utente la sua età
     const userAge = parseInt(prompt('Quanti anni hai?', 15 ));
     console.log('Age', userAge); 
+
+     // ! validazione
+     if (userAge <= 0){
+        alert('Hai inserito un valore non valido');
+        location.reload;
+    }
 // fine
    
 // 3.lavorazione dati
